@@ -133,6 +133,8 @@ var koala = {
       .attr('height',    function(d) { return d.size; })
       .attr('fill', function(d) { return String(d.rgb); })
       .attr('fill-opacity', 1)
+      .attr('stroke', 'black')
+      .attr('stroke-width', 0.5)
       .each('end',  function(d) { d.node = this; });
   }
 
